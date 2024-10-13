@@ -1,0 +1,104 @@
+/* Admin Dashboard Container */
+.admin-dashboard {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    background: linear-gradient(135deg, #f0f4f8, #ffffff); 
+    transition: transform 0.3s ease;
+  }
+  
+  .admin-dashboard:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .admin-dashboard h2 {
+    font-size: 32px;
+    color: #2c3e50; 
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1px; 
+    font-weight: bold;
+  }
+  
+  .admin-dashboard .profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .admin-dashboard .profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5; 
+  }
+  
+  .admin-dashboard .profile-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-5px); 
+  }
+  
+  
+  .admin-dashboard .profile-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #007bff; 
+  }
+  
+  .admin-dashboard .buttons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .admin-dashboard .button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 25px; 
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .admin-dashboard .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); 
+  }
+  
+
+  .admin-dashboard .button.delete {
+    background-color: #dc3545;
+  }
+  
+  .admin-dashboard .button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  @media (min-width: 768px) {
+    .admin-dashboard {
+        padding: 40px;
+    }
+  
+    .admin-dashboard .profile-item {
+        padding: 25px;
+    }
+  
+    .admin-dashboard .profile-item img {
+        width: 70px;
+        height: 70px;
+    }
+  }
